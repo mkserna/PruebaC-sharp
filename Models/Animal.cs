@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace PruebaC_sharp_MarianaPerezSerna.Models
 {
-    public class Animal
+    public abstract class Animal
     {
         protected int Id { get; set; }
         protected string Name { get; set; }
@@ -23,15 +23,8 @@ namespace PruebaC_sharp_MarianaPerezSerna.Models
             WeightInKg = weightInKg;
         }
 
-        //Metodo para mostrar información del animal
-        public void ShowInformation()
-        {
-            Console.WriteLine($"Nombre: {Name}");
-            Console.WriteLine($"Fecha de nacimiento: {Birthdate}");
-            Console.WriteLine($"Raza: {Breed}");
-            Console.WriteLine($"Color: {Color}");
-            Console.WriteLine($"Peso: {WeightInKg} kg");
-        }
+        //Metodo abtracto para mostrar información del animal
+        public abstract void ShowInformation();
 
         //Metodo para realizar una revisión básica del animal
         protected void BasicReview()

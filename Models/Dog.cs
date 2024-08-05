@@ -40,6 +40,20 @@ namespace PruebaC_sharp_MarianaPerezSerna.Models
             }
         }
 
+        public override void ShowInformation()
+        {
+            Console.WriteLine($"Nombre: {Name}");
+            Console.WriteLine($"Fecha de nacimiento: {Birthdate}");
+            Console.WriteLine($"Raza: {Breed}");
+            Console.WriteLine($"Color: {Color}");
+            Console.WriteLine($"Peso: {WeightInKg} kg");
+            Console.WriteLine($"Estado de castración: {BreedingStatus}");
+            Console.WriteLine($"Temperamento: {Temperament}");
+            Console.WriteLine($"Número de microchip: {MicrochipNumber}");
+            Console.WriteLine($"Volumen de la piel: {BarkVolume}");
+            Console.WriteLine($"Tipo de capa: {CoatType}");
+        }
+
         //Peliqueria del perro
         public void Hairdress()
         {

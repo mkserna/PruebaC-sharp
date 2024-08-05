@@ -34,6 +34,17 @@ namespace PruebaC_sharp_MarianaPerezSerna.Models
             }
         }
 
+        public override void ShowInformation()
+        {
+            Console.WriteLine($"Nombre: {Name}");
+            Console.WriteLine($"Fecha de nacimiento: {Birthdate}");
+            Console.WriteLine($"Raza: {Breed}");
+            Console.WriteLine($"Color: {Color}");
+            Console.WriteLine($"Peso: {WeightInKg} kg");
+            Console.WriteLine($"Estado de castración: {BreedingStatus}");
+            Console.WriteLine($"Longitud de pelo: {FurLength}");
+        }
+
         //Peliqueria del gato
         public void Hairdress()
         {
