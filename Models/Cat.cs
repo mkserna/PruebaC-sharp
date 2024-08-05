@@ -5,14 +5,16 @@ using System.Threading.Tasks;
 
 namespace PruebaC_sharp_MarianaPerezSerna.Models
 {
-    public class Cat(string name,
+    public class Cat(int id,
+    string name,
     DateOnly birthdate,
     string breed,
     string color,
     double weightInKg,
     bool breedingStatus,
     string furLength) :
-    Animal(name,
+    Animal(id,
+    name,
     birthdate,
     breed,
     color,

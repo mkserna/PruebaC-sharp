@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace PruebaC_sharp_MarianaPerezSerna.Models
 {
-    public class Dog(string name,
+    public class Dog(int id,
+    string name,
     DateOnly birthdate,
     string breed,
     string color,
@@ -15,7 +16,8 @@ namespace PruebaC_sharp_MarianaPerezSerna.Models
     string microchipNumber,
     string barkVolume,
     string coatType) :
-    Animal(name,
+    Animal(id, 
+    name,
     birthdate,
     breed,
     color,

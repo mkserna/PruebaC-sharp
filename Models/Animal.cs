@@ -14,8 +14,9 @@ namespace PruebaC_sharp_MarianaPerezSerna.Models
         protected string Color { get; set; } 
         protected double WeightInKg { get; set; } //Peso
 
-        public Animal(string name, DateOnly birthdate, string breed, string color, double weightInKg)
+        public Animal(int id,string name, DateOnly birthdate, string breed, string color, double weightInKg)
         {
+            Id = id;
             Name = name;
             Birthdate = birthdate;
             Breed = breed;

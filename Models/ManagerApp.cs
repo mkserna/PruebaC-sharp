@@ -7,6 +7,6 @@ namespace PruebaC_sharp_MarianaPerezSerna.Models
 {
     public class ManagerApp
     {
-        
+
     }
 }
