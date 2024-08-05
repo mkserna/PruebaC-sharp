@@ -28,17 +28,20 @@ namespace PruebaC_sharp_MarianaPerezSerna.Models
         {
             if (BreedingStatus == true)
             {
-                Console.WriteLine($"El gato está castrado.");
+                Console.WriteLine("El gato ya está castrado. No puedes castrarlo otra vez");
+
             }
-            else
+            else if (BreedingStatus == false)
             {
-                Console.WriteLine($"El gato no está castrado.");
+                Console.WriteLine("Gato castrado. Ahora está castrado");
+                BreedingStatus = true;
             }
         }
 
         public override void ShowInformation()
         {
-            Console.WriteLine($"Nombre: {Name}");
+            ManagerApp.Header($"Información de {Name} 😺");
+            Console.WriteLine($"Id: {Id}");
             Console.WriteLine($"Fecha de nacimiento: {Birthdate}");
             Console.WriteLine($"Raza: {Breed}");
             Console.WriteLine($"Color: {Color}");
@@ -48,9 +51,23 @@ namespace PruebaC_sharp_MarianaPerezSerna.Models
         }
 
         //Peliqueria del gato
-        public void Hairdress()
+        public void HairdressCat()
         {
+            if (FurLength == "Sin pelo")
+            {
+                Console.WriteLine("El gato no tiene pelo, no lo puedes peliquerar");
 
+            }
+            else if (FurLength == "Pelo corto")
+            {
+                Console.WriteLine("Gato peluqueado. Ahora no tiene pelo");
+                FurLength = "Sin pelo";
+            }
+            else if (FurLength == "Pelo largo")
+            {
+                Console.WriteLine("Gato peluqueado. Ahora tiene el pelo corto");
+                FurLength = "Pelo corto";
+            }
         }
     }
 }

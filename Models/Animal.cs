@@ -14,6 +14,21 @@ namespace PruebaC_sharp_MarianaPerezSerna.Models
         protected string Color { get; set; } 
         protected double WeightInKg { get; set; } //Peso
 
+        public int GetId() => Id;
+        public string GetName() => Name;
+        public DateOnly GetBirthdate() => Birthdate;
+        public string GetBreed() => Breed;
+        public string GetColor() => Color;
+        public double GetWeightInKg() => WeightInKg;
+
+
+        public int SetId(int id) => Id = id;
+        public string SetName(string name) => Name = name;
+        public DateOnly SetBirthdate(DateOnly birthdate) => Birthdate = birthdate;
+        public string SetBreed(string breed) => Breed = breed;
+        public string SetColor(string color) => Color = color;
+        public double SetWeightInKg(double weightInKg) => WeightInKg = weightInKg;
+
         public Animal(int id,string name, DateOnly birthdate, string breed, string color, double weightInKg)
         {
             Id = id;
